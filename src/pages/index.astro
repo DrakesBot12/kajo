@@ -1,0 +1,308 @@
+---
+import "../styles/global.css";
+import { Image } from "astro:assets";
+import Footer from "../components/Footer.astro";
+import Nav from "../components/Nav.astro";
+import Meta from "../components/Meta.astro";
+
+import MainImg from "../assets/imgs/main/main_img.png";
+
+// Импорт изображений
+import AcmeLight from "../assets/imgs/logos/acme-white.svg";
+import AcmeDark from "../assets/imgs/logos/acme-black.svg";
+import AsgardiaLight from "../assets/imgs/logos/asgardia-white.svg";
+import AsgardiaDark from "../assets/imgs/logos/asgardia-black.svg";
+import GoldlineLight from "../assets/imgs/logos/goldline-white.svg";
+import GoldlineDark from "../assets/imgs/logos/goldline-black.svg";
+import KanbaLight from "../assets/imgs/logos/kanba-white.svg";
+import KanbaDark from "../assets/imgs/logos/kanba-black.svg";
+import UtosiaLight from "../assets/imgs/logos/utosia-white.svg";
+import UtosiaDark from "../assets/imgs/logos/utosia-black.svg";
+import CircleLight from "../assets/imgs/logos/circle-white.svg";
+import CircleDark from "../assets/imgs/logos/circle-black.svg";
+
+import AcmeWrapper from "../assets/imgs/wrappers/acme-wrapper.png"
+import GoldlineWrapper from "../assets/imgs/wrappers/goldline-wrapper.png"
+import UtosiaWrapper from "../assets/imgs/wrappers/utosia-wrapper.png"
+import KanbaWrapper from "../assets/imgs/wrappers/kanba-wrapper.png"
+
+import Brand from "../assets/imgs/services/brand.png"
+import Website from "../assets/imgs/services/website.png"
+import Design from "../assets/imgs/services/ui&ux.png"
+
+import QuoteWhite from "../assets/icons/quote-white.svg"
+import QuoteBlack from "../assets/icons/quote-black.svg"
+
+import Profile from "../assets/imgs/main/profile.png" 
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+    <Meta />
+    <title>KAJO / HOME</title>
+</head>
+<body>
+    <section class="flex" id='hero'>
+        <Image src={MainImg} alt="main_img" class="h-screen sticky top-0" loading="lazy" />
+        <div class='w-full flex flex-col gap-40'>
+            <Nav />
+            <div class="w-full h-screen px-24 pt-40 flex flex-col justify-between">
+                <h1 class="medium">©kajo STUDIO</h1>
+                <div class="flex flex-col gap-8">
+                    <p class="meta muted">(Based in Prague)</p>
+                    <h2 class="alt">Crafting impactful brands and websites that drive growth and success.</h2>
+                </div>
+            </div>
+            <div class="flex flex-col w-full min-h-screen px-24 gap-32">
+                <div class='flex flex-col gap-8'>
+                    <p class="meta">(About Us)</p>
+                    <div class='flex flex-col gap-4'>
+                        <h2>Creative Brands, Powerful Websites</h2>
+                        <p class="medium muted">We are passionate about creating meaningful brands and dynamic websites that stand out in today’s competitive market. Our team combines strategic thinking with creative design to craft custom solutions that align with your business goals. From developing a unique brand identity to designing intuitive, responsive websites, we focus on delivering experiences that engage and convert.</p>
+						<p class='medium muted'>With every project, we ensure that your brand’s story is told in a way that resonates with your audience, builds trust, and drives growth. Let us help you transform your brand and take your digital presence to the next level.</p>
+                    </div>
+                </div>
+                <div class='flex flex-col gap-9'>
+                    <p class="meta">(Companies we worked with)</p>
+                    <div class="grid grid-cols-3 gap-16 items-center">
+                        <Image src={AcmeLight} alt="Acme logo" class="dark:hidden" />
+                        <Image src={AcmeDark} alt="Acme logo" class="hidden dark:block" />
+                        <Image src={AsgardiaLight} alt="Asgardia logo" class="dark:hidden" />
+                        <Image src={AsgardiaDark} alt="Asgardia logo" class="hidden dark:block" />
+                        <Image src={GoldlineLight} alt="Goldline logo" class="dark:hidden" />
+                        <Image src={GoldlineDark} alt="Goldline logo" class="hidden dark:block" />
+                        <Image src={KanbaLight} alt="Kanba logo" class="dark:hidden" />
+                        <Image src={KanbaDark} alt="Kanba logo" class="hidden dark:block" />
+                        <Image src={UtosiaLight} alt="Utosia logo" class="dark:hidden" />
+                        <Image src={UtosiaDark} alt="Utosia logo" class="hidden dark:block" />
+                        <Image src={CircleLight} alt="Circle logo" class="dark:hidden" />
+                        <Image src={CircleDark} alt="Circle logo" class="hidden dark:block" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+	<section class="flex flex-col bg-muted relative z-50" id="projects">
+		<header class="flex flex-col gap-24 p-24 w-full">
+			<div class="flex justify-between">
+				<p class="meta muted">(Selected Work)</p>
+				<p class="meta muted">(01)</p>
+			</div>
+			<div>
+				<h1 class="xlarge">PROJECTS</h1>
+				<h1 class="alt small">Explore our recent projects showcasing creativity, innovation, and impactful design solutions.</h1>
+			</div>
+		</header>
+		<div class="grid grid-cols-2 grid-rows-2">
+			<a href='/projects/acme' class='cursor-pointer hover:bg-zinc-800 transition-background duration-300 ease-in-out'>
+				<Image src={AcmeWrapper} alt='Acme Wrapper' />
+				<div class='flex w-full justify-between p-8 items-center'>
+					<h3 class="alt">Acme</h3>
+					<p class="meta muted">(2024)</p>
+				</div>
+			</a>
+			<a href='/projects/goldline' class='cursor-pointer hover:bg-zinc-800 transition-background duration-300 ease-in-out'>
+				<Image src={GoldlineWrapper} alt='GoldLine Wrapper' />
+				<div class='flex w-full justify-between p-8 items-center'>
+					<h3 class="alt">GoldLine</h3>
+					<p class="meta muted">(2024)</p>
+				</div>
+			</a>
+			<a href='/projects/utosia' class='cursor-pointer hover:bg-zinc-800 transition-background duration-300 ease-in-out'>
+				<Image src={UtosiaWrapper} alt='Utosia Wrapper' />
+				<div class='flex w-full justify-between p-8 items-center'>
+					<h3 class="alt">Utosia</h3>
+					<p class="meta muted">(2024)</p>
+				</div>
+			</a>
+			<a href='/projects/kanba' class='cursor-pointer hover:bg-zinc-800 transition-background duration-300 ease-in-out'>
+				<Image src={KanbaWrapper} alt='Knaba Wrapper' />
+				<div class='flex w-full justify-between p-8 items-center'>
+					<h3 class="alt">Kanba</h3>
+					<p class="meta muted">(2024)</p>
+				</div>
+			</a>
+		</div>
+	</section>
+	<section class="flex flex-col bg relative z-50" id="services">
+		<header class="flex flex-col gap-24 p-24 w-full">
+			<div class="flex justify-between">
+				<p class="meta muted">(What we do)</p>
+				<p class="meta muted">(02)</p>
+			</div>
+			<div>
+				<h1 class="xlarge">SERVICES</h1>
+				<h1 class="alt small">Discover our tailored services designed to elevate your brand, enhance user experience.</h1>
+			</div>
+		</header>
+		<section>
+			<article class="flex h-screen bg-muted">
+				<Image src={Brand} alt="Brand IMG" class="h-screen w-fit" />
+				<div class="flex flex-col p-32 justify-between h-screen'">
+					<div class='flex flex-col gap-4'>
+						<h1 class="small uppercase">Brand Strategy</h1>
+						<h3 class="alt">Build a strong, cohesive brand identity to connect with your audience.</h3>
+					</div>
+					<div class='flex flex-col gap-8'>
+						<p class="meta muted">(Branding Services)</p>
+						<div class='flex justify-between w-full'>
+							<h4 class="alt">Brand Discovery<br>Visual Identity Design</h4>
+							<h4 class="alt">Brand Positioning<br>Brand Guidelines</h4>
+						</div>
+					</div>
+				</div>
+			</article>
+			<article class="flex h-screen">
+				<div class="flex flex-col p-32 justify-between h-screen'">
+					<div class='flex flex-col gap-4'>
+						<h1 class="small uppercase">Website Design</h1>
+						<h3 class="alt">Create custom, responsive websites that engage users and drive conversions.</h3>
+					</div>
+					<div class='flex flex-col gap-8'>
+						<p class="meta muted">(Website Services)</p>
+						<div class='flex justify-between w-full'>
+							<h4 class="alt">Website Design<br>Framer Development</h4>
+							<h4 class="alt">Webflow Development<br>Website Support</h4>
+						</div>
+					</div>
+				</div>
+				<Image src={Website} alt="Website IMG" class="h-screen w-fit" />
+			</article>
+			<article class="flex h-screen bg-muted">
+				<Image src={Design} alt="Design IMG" class="h-screen w-fit" />
+				<div class="flex flex-col p-32 justify-between h-screen'">
+					<div class='flex flex-col gap-4'>
+						<h1 class="small uppercase">Ui/Ux<br>Design</h1>
+						<h3 class="alt">Enhance user experience through intuitive and user-centered design solutions.</h3>
+					</div>
+					<div class='flex flex-col gap-8'>
+						<p class="meta muted">(UI/UX Services)</p>
+						<div class='flex justify-between w-full'>
+							<h4 class="alt">User Research<br>Wireframing</h4>
+							<h4 class="alt">Usability Testing<br>UI/UX Audits</h4>
+						</div>
+					</div>
+				</div>
+			</article>
+		</section>
+	</section>
+	<section class="flex flex-col bg relative z-50" id="reviews">
+		<header class="flex flex-col gap-24 p-24 w-full">
+			<div class="flex justify-between">
+				<p class="meta muted">(Testimonials)</p>
+				<p class="meta muted">(03)</p>
+			</div>
+			<div>
+				<h1 class="xlarge uppercase">What our clients says</h1>
+				<h1 class="alt small">Hear our clients about their success stories and experiences with us.</h1>
+			</div>
+		</header>
+		<section class="grid grid-cols-3 grid-rows-2">
+			<article class="review">
+				<Image src={QuoteWhite} alt="Quote" class="hidden dark:block"/>
+				<Image src={QuoteBlack} alt="Quote" class="block dark:hidden"/>
+				<div class="flex flex-col justify-between h-full">
+					<div class='flex flex-col gap-4'>
+						<h3 class="alt">Exceptional Branding That Elevated Our Identity.</h3>
+						<p class="muted">Their strategic approach completely transformed our brand. We’ve seen a huge increase in recognition and client engagement.</p>
+					</div>
+					<div class="flex gap-4">
+						<Image src={Profile} alt="profile picture" class="rounded-full object-cover" />
+						<div class='flex flex-col gap-1'>
+							<h5 class="alt">Dave Mitchell</h5>
+							<p class="meta muted">(Lumina)</p>
+						</div>
+					</div>
+				</div>
+			</article>
+			<article class="review">
+				<Image src={QuoteWhite} alt="Quote" class="hidden dark:block"/>
+				<Image src={QuoteBlack} alt="Quote" class="block dark:hidden"/>
+				<div class="flex flex-col gap-12">
+					<div class='flex flex-col gap-4'>
+						<h3 class="alt">Outstanding Website Design, Exceeding Expectations.</h3>
+						<p class="muted">The website they created is stunning, user-friendly, and has boosted our online conversions significantly. Highly recommend!</p>
+					</div>
+					<div class="flex gap-4">
+						<Image src={Profile} alt="profile picture" class="rounded-full object-cover" />
+						<div class='flex flex-col gap-1'>
+							<h5 class="alt">Sara Thompson</h5>
+							<p class="meta muted">(Horizon)</p>
+						</div>
+					</div>
+				</div>
+			</article>
+			<article class="review">
+				<Image src={QuoteWhite} alt="Quote" class="hidden dark:block"/>
+				<Image src={QuoteBlack} alt="Quote" class="block dark:hidden"/>
+				<div class="flex flex-col gap-12">
+					<div class='flex flex-col gap-4'>
+						<h3 class="alt">Creative Solutions That Drove Real Results for Our Website.</h3>
+						<p class="muted">Their designs are not only beautiful but effective. Our sales increased by 30% post-launch. Incredible experience!</p>
+					</div>
+					<div class="flex gap-4">
+						<Image src={Profile} alt="profile picture" class="rounded-full object-cover" />
+						<div class='flex flex-col gap-1'>
+							<h5 class="alt">Emil Rogers</h5>
+							<p class="meta muted">(Pure Green)</p>
+						</div>
+					</div>
+				</div>
+			</article>
+			<article class="review">
+				<Image src={QuoteWhite} alt="Quote" class="hidden dark:block"/>
+				<Image src={QuoteBlack} alt="Quote" class="block dark:hidden"/>
+				<div class="flex flex-col gap-12">
+					<div class='flex flex-col gap-4'>
+						<h3 class="alt">Seamless Collaboration & Support With Exceptional Results.</h3>
+						<p class="muted">Working with them was easy and efficient. They perfectly captured our vision, and the results were outstanding.</p>
+					</div>
+					<div class="flex gap-4">
+						<Image src={Profile} alt="profile picture" class="rounded-full object-cover" />
+						<div class='flex flex-col gap-1'>
+							<h5 class="alt">Michaela Lee</h5>
+							<p class="meta muted">(Apex Fitness)</p>
+						</div>
+					</div>
+				</div>
+			</article>
+			<article class="review">
+				<Image src={QuoteWhite} alt="Quote" class="hidden dark:block"/>
+				<Image src={QuoteBlack} alt="Quote" class="block dark:hidden"/>
+				<div class="flex flex-col gap-12">
+					<div class='flex flex-col gap-4'>
+						<h3 class="alt">Strategic Branding & Identity With Immediate Impact.</h3>
+						<p class="muted">Our new branding resonated with our audience immediately. We’ve received so many compliments and new business inquiries.</p>
+					</div>
+					<div class="flex gap-4">
+						<Image src={Profile} alt="profile picture" class="rounded-full object-cover" />
+						<div class='flex flex-col gap-1'>
+							<h5 class="alt">Amanda Lopez</h5>
+							<p class="meta muted">(Urban Intariors)</p>
+						</div>
+					</div>
+				</div>
+			</article>
+			<article class="review">
+				<Image src={QuoteWhite} alt="Quote" class="hidden dark:block"/>
+				<Image src={QuoteBlack} alt="Quote" class="block dark:hidden"/>
+				<div class="flex flex-col gap-12">
+					<div class='flex flex-col gap-4'>
+						<h3 class="alt">UX Design That Transformed Our User Experience.</h3>
+						<p class="muted">Their UX design made our platform more intuitive and enjoyable to use. Customer satisfaction has dramatically improved.</p>
+					</div>
+					<div class="flex gap-4">
+						<Image src={Profile} alt="profile picture" class="rounded-full object-cover" />
+						<div class='flex flex-col gap-1'>
+							<h5 class="alt">Jason Carter</h5>
+							<p class="meta muted">(Quantium)</p>
+						</div>
+					</div>
+				</div>
+			</article>
+		</section>
+	</section>
+	<Footer />
+</body>
+</html>

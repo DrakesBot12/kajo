@@ -1,0 +1,43 @@
+---
+import { Image } from "astro:assets";
+import "../../styles/global.css";
+
+import Nav from "../../components/Nav.astro"
+import Footer from "../../components/Footer.astro"
+import Meta from "../../components/Meta.astro";
+
+import Acme from "../../assets/imgs/projects/acme/acme.png";
+import GoldLine from "../../assets/imgs/projects/goldline/goldline.png";
+import Kanba from "../../assets/imgs/projects/kanba/kanba.png";
+import Utosia from "../../assets/imgs/projects/utosia/utosia.png";
+---
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <Meta />
+        <title>KAJO / PROJECTS</title>
+    </head>
+    <body>
+        <Nav class="nav-full" />
+        <header class="flex flex-col gap-24 p-24 pt-40 w-full">
+			<h1 class="xxlarge uppercase">Projects</h1>
+			<h1 class="alt small">View our work, reflecting unique solutions for diverse client needs.</h1>
+		</header>
+        <section class="flex flex-col gap-6" id="projects">
+            <a href="projects/acme">
+                <Image src={Acme} alt="acme" class="cursor-pointer h-screen" loading="lazy" />
+            </a>
+            <a href="projects/kanba">
+                <Image src={Kanba} alt="Kanba" class="cursor-pointer h-screen" loading="lazy" />
+            </a>
+            <a href="projects/utosia">
+                <Image src={Utosia} alt="Utosia" class="cursor-pointer h-screen" loading="lazy" />
+            </a>
+            <a href="projects/goldline">
+                <Image src={GoldLine} alt="GoldLine" class="cursor-pointer h-screen" loading="lazy" />
+            </a>
+        </section>
+        <Footer />
+    </body>
+</html>

@@ -1,0 +1,229 @@
+---
+import { Image } from "astro:assets";
+import "../styles/global.css";
+
+import Nav from "../components/Nav.astro"
+import Footer from "../components/Footer.astro"
+import Meta from "../components/Meta.astro";
+
+import ServiceWrapper1 from "../assets/imgs/services/service-wrapper1.png"
+import ServiceWrapper2 from "../assets/imgs/services/service-wrapper2.png"
+import ServiceWrapper3 from "../assets/imgs/services/service-wrapper3.png"
+import ServiceWrapper5 from "../assets/imgs/services/service-wrapper5.png"
+import WebsiteFull from "../assets/imgs/services/website-full.png"
+
+import ImagePR from  "../assets/imgs/services/imagePreview.png"
+
+import QuoteWhite from "../assets/icons/quote-white.svg"
+import QuoteBlack from "../assets/icons/quote-black.svg"
+
+import Process1 from "../assets/imgs/services/process/1.png"
+import Process2 from "../assets/imgs/services/process/2.png"
+import Process3 from "../assets/imgs/services/process/3.png"
+import Process4 from "../assets/imgs/services/process/4.png"
+---
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <Meta />
+        <title>KAJO / SERVICES</title>
+    </head>
+    <body>
+        <Nav class="nav-full" />
+        <header class="flex flex-col p-24 pt-40 w-full">
+			<h1 class="xxlarge uppercase">Service</h1>
+			<h1 class="alt small">Explore our recent projects showcasing creativity, innovation, and impactful design solutions.</h1>
+		</header>
+        <section id="brand-strategy">
+            <div class="flex">
+                <Image src={ ServiceWrapper1 } alt="Service Wrapper 1" class="w-[40%] aspect-square" />
+                <Image src={ ServiceWrapper2 } alt="Service Wrapper 2" class="w-[60%] aspect-video" />                
+            </div>
+            <section class="flex p-24 gap-24">
+                <h1 class="small uppercase sticky top-40 h-fit">Brand Strategy</h1>
+                <div class="flex flex-col gap-20">
+                    <h2 class="alt">We create compelling brand identities that resonate with your audience, helping you establish a strong presence and foster meaningful connections.</h2>
+                    <section class="flex flex-col gap-12">
+                        <article class="flex flex-col gap-4">
+                            <h3 class="alt">Brand Discovery & Research</h3>
+                            <p class="muted">In-depth brand discovery and research help us understand your business, target audience, and market landscape. We conduct comprehensive analyses, including competitor reviews and audience surveys, to uncover valuable insights that inform your brand strategy. This foundational work ensures our creative solutions align perfectly with your business goals and vision.</p>                        
+                        </article>
+                        <hr class="muted">
+                        <article class="flex flex-col gap-4">
+                            <h3 class="alt">Logo & Visual Identity Design</h3>
+                            <p class="muted">Our logo and visual identity design services focus on creating memorable and impactful brand elements. We craft unique logos that encapsulate your brand's essence, complemented by a cohesive visual identity, including color palettes, typography, and graphics. This helps establish brand recognition and creates a strong, lasting impression on your audience.</p>                        
+                        </article>
+                        <hr class="muted">
+                        <article class="flex flex-col gap-4">
+                            <h3 class="alt">Brand Messaging & Positioning</h3>
+                            <p class="muted">We develop compelling brand messaging and positioning strategies that resonate with your target audience. By identifying your unique value proposition and crafting a consistent tone of voice, we ensure your message communicates authenticity and connects emotionally with your customers. This clarity helps differentiate your brand in a competitive marketplace.</p>                        
+                        </article>
+                        <hr class="muted">
+                        <article class="flex flex-col gap-4">
+                            <h3 class="alt">Brand Guidelines Creation</h3>
+                            <p class="muted">Brand guidelines serve as a comprehensive resource for maintaining consistency in your brand’s presentation. We create detailed guidelines that outline the proper use of your logo, typography, colors, imagery, and messaging. This ensures that everyone involved in your brand's communication adheres to the same standards, reinforcing brand recognition.</p>                        
+                        </article>
+                    </section>
+                </div>
+            </section>
+            <div class="flex gap-4">
+                <Image src={ ServiceWrapper3 } alt="Service Wrapper 3" class="w-[40%] object-cover aspect-video" /> 
+                <Image src={ WebsiteFull } alt="Website Full" class="w-[59%] object-cover aspect-square" />               
+            </div>
+            <section class="flex p-24 gap-24">
+                <h1 class="small uppercase sticky top-40 h-fit">Website Design</h1>
+                <div class="flex flex-col gap-20">
+                    <h2 class="alt">Our website design services focus on crafting visually stunning, user-friendly sites that effectively communicate your brand and drive engagement.</h2>
+                    <section class="flex flex-col gap-12">
+                        <article class="flex flex-col gap-4">
+                            <h3 class="alt">Custom Website Design</h3>
+                            <p class="muted">Our custom website design service focuses on crafting unique, visually appealing websites tailored to your brand identity. We prioritize user experience, ensuring intuitive navigation and seamless functionality. Each design reflects your business goals and resonates with your target audience, driving engagement and conversions effectively.</p>                        
+                        </article>
+                        <hr class="muted">
+                        <article class="flex flex-col gap-4">
+                            <h3 class="alt">Framer Development</h3>
+                            <p class="muted">Framer development combines design and code to create interactive and dynamic web experiences. Utilizing Framer's powerful tools, we build responsive layouts that enhance user engagement and storytelling. Our approach ensures your website is not only visually stunning but also optimized for performance, providing a smooth experience across all devices.</p>                        
+                        </article>
+                        <hr class="muted">
+                        <article class="flex flex-col gap-4">
+                            <h3 class="alt">Webflow Development</h3>
+                            <p class="muted">Our Webflow development service empowers you to manage your website effortlessly. We create custom, responsive sites using Webflow’s intuitive platform, allowing for seamless content updates without technical expertise. With a focus on aesthetics and functionality, we deliver websites that captivate users and meet your business objectives.</p>                        
+                        </article>
+                        <hr class="muted">
+                        <article class="flex flex-col gap-4">
+                            <h3 class="alt">Website Maintenance & Support</h3>
+                            <p class="muted">We provide comprehensive website maintenance and support services to ensure your site remains secure, up-to-date, and fully functional. Our proactive approach includes regular backups, software updates, and performance monitoring. This allows you to focus on your core business while we handle the technical aspects of your online presence.</p>                        
+                        </article>
+                    </section>
+                </div>
+            </section>
+            <div class="flex gap-4">   
+                <Image src={ Process2 } alt="Service Wrapper 4" class="w-[40%] object-cover aspect-square" /> 
+                <Image src={ ServiceWrapper5 } alt="Service Wrapper 5" class="w-[59%] object-cover aspect-video" />            
+            </div>
+            <section class="flex p-24 gap-24 bg-muted">
+                <h1 class="small uppercase sticky top-40 h-fit">UI/UX Design</h1>
+                <div class="flex flex-col gap-20">
+                    <h2 class="alt">We enhance user experiences through intuitive UI/UX design, ensuring seamless interactions that delight users and meet your business objectives.</h2>
+                    <section class="flex flex-col gap-12">
+                        <article class="flex flex-col gap-4">
+                            <h3 class="alt">User Research & Personas Development</h3>
+                            <p class="muted">Our user research and personas development service involves understanding your target audience through interviews, surveys, and analysis. We create detailed user personas that represent your customers, allowing us to tailor design strategies and improve user experience. This foundational work ensures your solutions are aligned with real user needs and behaviors.</p>                        
+                        </article>
+                        <hr class="muted">
+                        <article class="flex flex-col gap-4">
+                            <h3 class="alt">Wireframing & Prototyping</h3>
+                            <p class="muted">We specialize in wireframing and prototyping to visualize your website or application before development. By creating low-fidelity wireframes and interactive prototypes, we map out user flows and layouts. This process allows for early feedback and adjustments, ensuring the final design is intuitive and user-friendly, ultimately enhancing the user experience.</p>                        
+                        </article>
+                        <hr class="muted">
+                        <article class="flex flex-col gap-4">
+                            <h3 class="alt">Usability Testing & Analysis</h3>
+                            <p class="muted">Our usability testing and analysis services evaluate how real users interact with your product. We conduct tests to identify pain points and areas for improvement, gathering valuable insights into user behavior. This data-driven approach enables us to refine your design, ensuring a seamless and enjoyable user experience.</p>                        
+                        </article>
+                        <hr class="muted">
+                        <article class="flex flex-col gap-4">
+                            <h3 class="alt">UI/UX Audits & Redesigns</h3>
+                            <p class="muted">We offer comprehensive UI/UX audits and redesigns to assess your existing product's effectiveness. By analyzing user feedback, design consistency, and usability, we identify areas for improvement. Our redesign process revitalizes your digital experience, ensuring it aligns with user needs, enhances satisfaction, and drives engagement and conversions.</p>                        
+                        </article>
+                    </section>
+                </div>
+            </section>
+        </section>
+        <section class="flex flex-col" id="testimonials">
+            <header class="flex flex-col gap-24 p-24 w-full">
+                <div class="flex justify-between">
+                    <p class="meta muted">(Testimonials)</p>
+                    <p class="meta muted">(01)</p>
+                </div>
+                <div>
+                    <h1 class="xlarge uppercase">What our clients Say</h1>
+                    <h1 class="alt small">See what our satisfied clients say about working with us.</h1>
+                </div>
+            </header>
+            <div class="flex">
+                <Image src={ImagePR} alt='Image' class="w-1/2 aspect-square object-cover" />
+                <div class="review justify-between">
+                    <Image src={QuoteWhite} alt="quote" class="hidden dark:block" />
+                    <Image src={QuoteBlack} alt="quote" class="block dark:hidden" />
+                    <div class="flex flex-col gap-8">
+                        <p class="meta muted">(Utosia)</p>
+                        <h1 class="alt">Exceptional Branding That Elevated Our Identity.</h1>
+                        <p class="muted">Their strategic approach completely transformed our brand. We’ve seen a huge increase in recognition and client engagement</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="process">
+            <header class="flex flex-col gap-24 p-24 w-full">
+                <div class="flex justify-between">
+                    <p class="meta muted">(How we work)</p>
+                    <p class="meta muted">(02)</p>
+                </div>
+                <div>
+                    <h1 class="xlarge uppercase">Process</h1>
+                    <h1 class="alt small">Our proven process ensures successful outcomes and client satisfaction every time.</h1>
+                </div>
+            </header>
+            <section class="flex flex-col">
+                <article class="flex">
+                    <Image src={Process1} alt='Image' class="w-1/2 aspect-square object-cover" />
+                    <div class="review justify-between">
+                        <h1 class="medium">01</h1>
+                        <div class="flex flex-col gap-8">
+                            <p class="meta muted">(Discovery)</p>
+                            <h1 class="alt">Understanding Your Unique Needs.</h1>
+                            <div class="flex justify-between">
+                                <p class="muted">In the discovery phase, we immerse ourselves in your brand’s vision, goals, and target audience. Through collaborative discussions and research, we gather insights that inform our strategy. </p>
+                                <p class="muted">This foundational step ensures that our design solutions align perfectly with your objectives and resonate deeply with your audience.</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="flex">
+                    <div class="review bg-[var(--dark)] justify-between">
+                        <h1 class="medium">02</h1>
+                        <div class="flex flex-col gap-8">
+                            <p class="meta muted">(Design)</p>
+                            <h1 class="alt">Crafting Innovative Solutions.</h1>
+                            <div class="flex justify-between">
+                                <p class="muted">During the design phase, our team translates insights into visually captivating and functional designs. We create wireframes, prototypes, and mockups, allowing you to visualize the project.</p>
+                                <p class="muted">This iterative process encourages collaboration and feedback, ensuring the final design reflects your brand identity while enhancing user experience.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <Image src={Process2} alt='Image' class="w-1/2 aspect-square object-cover" />
+                </article>
+                <article class="flex">
+                    <Image src={Process3} alt='Image' class="w-1/2 aspect-square object-cover" />
+                    <div class="review justify-between">
+                        <h1 class="medium">03</h1>
+                        <div class="flex flex-col gap-8">
+                            <p class="meta muted">(Developmet)</p>
+                            <h1 class="alt">Bringing Ideas to Life.</h1>
+                            <div class="flex justify-between">
+                                <p class="muted">In the development stage, we transform approved designs into fully functional websites or applications. Our skilled developers utilize the latest technologies to ensure optimal performance, responsiveness, and security.</p>
+                                <p class="muted">We conduct thorough testing throughout this phase, addressing any issues to deliver a polished final product that exceeds expectations.</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="flex">
+                    <div class="review bg-[var(--dark)] justify-between">
+                        <h1 class="medium">04</h1>
+                        <div class="flex flex-col gap-8">
+                            <p class="meta muted">(Launch & Support)</p>
+                            <h1 class="alt">Seamless Deployment and Beyond.</h1>
+                            <div class="flex justify-between">
+                                <p class="muted">After final reviews and testing, we launch your project with precision and care. Our team ensures a smooth transition while providing ongoing support and maintenance.</p>
+                                <p class="muted">We’re committed to your success, offering guidance and updates to keep your website or application running optimally and evolving with your needs.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <Image src={Process4} alt='Image' class="w-1/2 aspect-square object-cover" />
+                </article>
+            </section>
+        </section>
+        <Footer />
+    </body>
+</html>

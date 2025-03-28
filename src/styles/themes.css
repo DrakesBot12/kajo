@@ -1,0 +1,82 @@
+html, body {
+    background: light-dark(white, var(--dark));
+}
+
+button {
+    color: light-dark(var(--dark), white);
+
+    &.circle {
+        border: light-dark(white, var(--dark)) solid 6px;
+        color: light-dark(white, var(--dark));
+    }
+}
+
+nav {
+    background-color: light-dark(white, var(--dark));
+}
+
+input, textarea {
+    background: light-dark(#F8F8F8, #181A1B);
+    border: 2px solid rgba(128, 128, 128, 0.2);
+    outline: none;
+}
+
+footer {
+    background: light-dark(var(--dark), white);
+    color: light-dark(white, var(--dark));
+}
+
+p {
+    color: light-dark(var(--dark), white);
+
+    &.muted {
+        opacity: 60%;
+    }
+}
+
+hr {
+    opacity: 20%;
+}
+
+
+
+.bg {
+    background: light-dark(white, var(--dark)); 
+}
+
+.bg-muted {
+    background: light-dark(#F8F8F8, #181A1B);
+}
+
+.bg-muted-2 {
+    background: light-dark(#EEEEEE, #1F2122);
+}
+
+.review {
+    &:nth-child(odd) {
+        background: light-dark(#F8F8F8, #181A1B);
+    }
+    
+    &:nth-child(even) {
+        background: light-dark(#EEEEEE, #1F2122);
+    }
+}
+
+.about_info {
+    &:nth-child(even) {
+        background: light-dark(#F8F8F8, #181A1B);
+    }
+    
+    &:nth-child(odd) {
+        background: light-dark(#EEEEEE, #1F2122);
+    }
+}
+
+.award_item:hover {
+    background-color: light-dark(#EEEEEE, #1F2122);
+}
+
+.full-button {
+    background: light-dark(var(--dark), white);
+    color: light-dark(white, var(--dark));
+}

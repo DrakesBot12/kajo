@@ -1,0 +1,93 @@
+---
+import { Image } from "astro:assets";
+import "../../styles/global.css";
+
+import Nav from "../../components/Nav.astro"
+import Footer from "../../components/Footer.astro"
+import Meta from "../../components/Meta.astro";
+
+import Img1 from "../../assets/imgs/journal/1.png"
+import Img2 from "../../assets/imgs/journal/2.png"
+import Img3 from "../../assets/imgs/journal/3.png"
+import Img4 from "../../assets/imgs/journal/4.png"
+import Img5 from "../../assets/imgs/journal/5.png"
+import Img6 from "../../assets/imgs/journal/6.png"
+---
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <Meta />
+        <title>KAJO / PROJECTS</title>
+    </head>
+    <body>
+        <Nav class="nav-full" />
+        <header class="flex flex-col gap-24 p-24 pt-40 w-full">
+			<h1 class="xxlarge uppercase">Journal</h1>
+			<h1 class="alt small">Explore insights, tips, and trends to elevate your brand strategy.</h1>
+		</header>
+        <section class="grid grid-cols-3 grid-rows-2">
+            <a class="about_info cursor-pointer">
+                <Image src={Img1} alt="image 1" class="h-full w-full aspect-square object-cover" loading="lazy" />
+                <div class="flex flex-col h-full p-20 gap-12">
+                    <p class="meta muted">(Art Director)</p>
+                    <div class="flex flex-col gap-4">
+                        <h4 class="uppercase">5 Essential Branding Tips for Businesses</h4>
+                        <p class="medium muted">Discover key strategies to create a memorable and impactful brand for your small business.</p>
+                    </div>
+                </div>
+            </a>
+            <a class="about_info cursor-pointer">
+                <Image src={Img2} alt="image 2" class="h-full w-full aspect-square object-cover" loading="lazy" />
+                <div class="flex flex-col h-full p-20 gap-12">
+                    <p class="meta muted">(Art Director)</p>
+                    <div class="flex flex-col gap-4">
+                        <h4 class="uppercase">How to Design a User-Friendly Website</h4>
+                        <p class="medium muted">Learn practical tips for designing websites that are both visually appealing and user-friendly.</p>
+                    </div>
+                </div>
+            </a>
+            <a class="about_info cursor-pointer">
+                <Image src={Img3} alt="image 3" class="h-full w-full aspect-square object-cover" loading="lazy" />
+                <div class="flex flex-col h-full p-20 gap-12">
+                    <p class="meta muted">(Art Director)</p>
+                    <div class="flex flex-col gap-4">
+                        <h4 class="uppercase">The Importance of Responsive Design</h4>
+                        <p class="medium muted">Explore why responsive design is crucial for enhancing experience and increasing conversions.</p>
+                    </div>
+                </div>
+            </a>
+            <a class="about_info cursor-pointer">
+                <Image src={Img4} alt="image 4" class="h-full w-full aspect-square object-cover" loading="lazy" />
+                <div class="flex flex-col h-full p-20 gap-12">
+                    <p class="meta muted">(Art Director)</p>
+                    <div class="flex flex-col gap-4">
+                        <h4 class="uppercase">Top 3 Web Development Trends in 2024</h4>
+                        <p class="medium muted">Stay ahead with the latest web development trends shaping digital experiences and online platforms in 2024.</p>
+                    </div>
+                </div>
+            </a>
+            <a class="about_info cursor-pointer">
+                <Image src={Img5} alt="image 5" class="h-full w-full aspect-square object-cover" loading="lazy" />
+                <div class="flex flex-col h-full p-20 gap-12">
+                    <p class="meta muted">(Art Director)</p>
+                    <div class="flex flex-col gap-4">
+                        <h4 class="uppercase">5 Essential Branding Tips for Businesses</h4>
+                        <p class="medium muted">Discover key strategies to create a memorable and impactful brand for your small business.</p>
+                    </div>
+                </div>
+            </a>
+            <a class="about_info cursor-pointer">
+                <Image src={Img6} alt="image 6" class="h-full w-full aspect-square object-cover" loading="lazy" />
+                <div class="flex flex-col h-full p-20 gap-12">
+                    <p class="meta muted">(Art Director)</p>
+                    <div class="flex flex-col gap-4">
+                        <h4 class="uppercase">How to Create an Effective Brand Identity</h4>
+                        <p class="medium muted">Uncover the essential elements needed to develop a cohesive and recognizable brand identity.</p>
+                    </div>
+                </div>
+            </a>
+        </section>
+        <Footer />
+    </body>
+</html>

@@ -1,0 +1,53 @@
+---
+const siteInfo = {
+    name: "Kajo Development",
+    title: "Kajo Development - Professional Web Development Services",
+    description: "Expert web development and application services for businesses and startups. We create modern, responsive, and high-performance web solutions.",
+    keywords: "web development, website creation, web applications, frontend, backend, fullstack, software development, mobile apps, responsive design, UI/UX, JavaScript, React, Node.js, TypeScript, web solutions, custom development",
+    author: "Kajo Development",
+    locale: "en_US",
+    themeColor: "#ffffff",
+};
+---
+
+<!-- Primary Meta Tags -->
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content={siteInfo.description} />
+<meta name="keywords" content={siteInfo.keywords} />
+<meta name="author" content={siteInfo.author} />
+<meta name="robots" content="index, follow" />
+<meta name="theme-color" content={siteInfo.themeColor} />
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content={siteInfo.title} />
+<meta property="og:description" content={siteInfo.description} />
+<meta property="og:site_name" content={siteInfo.name} />
+<meta property="og:locale" content={siteInfo.locale} />
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={siteInfo.title} />
+<meta name="twitter:description" content={siteInfo.description} />
+<meta name="twitter:creator" content="@drakesweb" />
+
+
+<!-- Mobile Web App -->
+<meta name="mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="apple-mobile-web-app-title" content={siteInfo.name} />
+
+<!-- Microsoft -->
+<meta name="msapplication-TileColor" content={siteInfo.themeColor} />
+<meta name="msapplication-config" content="/browserconfig.xml" />
+
+<!-- Additional Meta Tags -->
+<meta name="format-detection" content="telephone=no" />
+<meta name="google" content="notranslate" />
+<meta name="generator" content="Astro" />
+
+<!-- Favicon -->
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="manifest" href="/site.webmanifest" />

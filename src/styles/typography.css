@@ -1,0 +1,175 @@
+@font-face {
+    font-family: 'AntonSC';
+    src: url('../assets/fonts/AntonSC.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gambetta';
+    src: url('../assets/fonts/Gambetta.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'AntonSC', sans-serif;
+    font-display: swap;
+    text-wrap: balance;
+}
+
+h1 {
+    font-size: 96px;
+    line-height: 110%;
+
+    &.alt {
+        font-family: 'Inter', sans-serif;
+        font-size: 64px;
+        line-height: 130%;
+
+        &.small {
+            font-size: 80px;
+            line-height: 120%;
+        }
+    }
+
+    &.small {
+        font-size: 128px;
+        line-height: 100%;
+    }
+
+    &.medium {
+        font-size: 160px;
+        line-height: 100%;
+    }
+
+    &.large {
+        font-size: 192px;
+        line-height: 100%;
+    }
+
+    &.xlarge {
+        font-size: 240px;
+        line-height: 100%;
+    }
+
+    &.xxlarge {
+        font-size: 320px;
+        line-height: 100%;
+    }
+}
+
+h2 {
+    font-size: 80px;
+    line-height: 110%;
+
+    &.alt {
+        font-family: 'Inter', sans-serif;
+        font-size: 48px;
+        line-height: 130%;
+    }
+}
+
+h3 {
+    font-size: 64px;
+    line-height: 110%;
+
+    &.alt {
+        font-family: 'Inter', sans-serif;
+        font-size: 40px;
+        line-height: 140%;
+    }
+}
+
+h4 {
+    font-size: 48px;
+    line-height: 130%;
+
+    &.alt {
+        font-family: 'Inter', sans-serif;
+        font-size: 32px;
+        line-height: 130%;
+    }
+}
+
+h5 {
+    font-size: 32px;
+    line-height: 130%;
+
+    &.alt {
+        font-family: 'Inter', sans-serif;
+        font-size: 26px;
+        line-height: 130%;
+    }
+}
+
+h6 {
+    font-size: 24px;
+    line-height: 130%;
+}
+
+p {
+    font-size: 20px;
+    line-height: 180%;
+    text-wrap: balance;
+
+    &.small {
+        font-size: 18px;
+        line-height: 180%;
+    }
+
+    &.xsmall {
+        font-size: 16px;
+        line-height: 180%;
+    }
+
+    &.meta {
+        font-family: 'Gambetta', sans-serif;
+        font-size: 30px;
+        line-height: 100%;
+    }
+
+    &.medium {
+        font-size: 22px;
+        line-height: 170%;
+    }
+
+    &.large {
+        font-size: 24px;
+        line-height: 170%;
+    }
+
+    &.xlarge {
+        font-size: 28px;
+        line-height: 160%;
+    }
+
+    &.xxlarge {
+        font-size: 32px;
+        line-height: 160%;
+    }
+}
+
+a {
+    font-size: 22px;
+    line-height: 100%;
+}
+
+button {
+    font-size: 22px;
+    line-height: 100%;
+    text-decoration: underline;
+
+    &.circle {
+        font-size: 80px;
+        text-decoration: none;
+    }
+}
+
+li {
+    font-size: 26px;
+    line-height: 130%;
+    font-weight: bold;
+}

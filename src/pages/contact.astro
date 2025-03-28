@@ -1,0 +1,45 @@
+---
+import { Image } from "astro:assets";
+import "../styles/global.css";
+
+import Nav from "../components/Nav.astro"
+import Footer from "../components/Footer.astro"
+import Meta from "../components/Meta.astro";
+
+import MainImg from "../assets/imgs/lets_talk.png";
+---
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <Meta />
+        <title>KAJO / STUDIO</title>
+    </head>
+    <body>
+        <section class="flex" id="contact">
+            <Image src={MainImg} alt="main_img" class="h-screen sticky top-0" loading="lazy" />
+            <section class="flex flex-col w-full">
+                <Nav />
+                <header class="flex flex-col gap-24 p-24 pt-40">
+	    	    	<h1 class="xxlarge uppercase">Let's<br>Talk</h1>
+                    <div class="flex flex-col gap-8">
+                        <div class="flex gap-8">
+                            <div class="flex flex-col gap-4 w-full">
+                                <p class="meta muted">(Name)</p>
+                                <input type="text" placeholder="First Name" />
+                            </div>
+                            <div class="flex flex-col gap-4 w-full">
+                                <p class="meta muted">(Your email)</p>
+                                <input type="text" placeholder="Your email" />
+                            </div>                            
+                        </div>
+                        <textarea placeholder="Your Message"></textarea>
+                        <button class="full-button">Send message</button>
+                    </div>
+		        </header>                   
+            </section>
+         
+        </section>
+        <Footer />
+    </body>
+</html>

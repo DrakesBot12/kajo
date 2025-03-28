@@ -1,0 +1,25 @@
+---
+import { Image } from "astro:assets";
+import "../styles/global.css";
+
+import Nav from "../components/Nav.astro"
+import Footer from "../components/Footer.astro"
+import Meta from "../components/Meta.astro";
+---
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <Meta />
+        <title>KAJO / 404</title>
+    </head>
+    <body>
+        <Nav class="nav-full" />
+        <header class="flex flex-col gap-12 items-center h-full w-full" style="justify-content: center;">
+            <p class="meta muted">(404)</p>
+			<h1 class="xxlarge uppercase">Unknow Page</h1>
+			<h1 class="alt small">What you're looking for is definitely not here.</h1>
+		</header>
+        <Footer />
+</body>
+</html>

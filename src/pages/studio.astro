@@ -1,0 +1,292 @@
+---
+import { Image } from "astro:assets";
+import "../styles/global.css";
+
+import Nav from "../components/Nav.astro"
+import Footer from "../components/Footer.astro"
+import Meta from "../components/Meta.astro";
+
+import MainImg from "../assets/imgs/about/main_img.png";
+
+import Person1 from "../assets/imgs/about/person1.png";
+import Person2 from "../assets/imgs/about/person2.png"
+import Person3 from "../assets/imgs/about/person3.png"
+import Person4 from "../assets/imgs/about/person4.png"
+import Person5 from "../assets/imgs/about/person5.png"
+import Person6 from "../assets/imgs/about/person6.png"
+
+import Twtr from "../assets/icons/twitter.svg"
+import Inst from "../assets/icons/instagram.svg"
+import Fsbc from "../assets/icons/facebook.svg"
+
+//awards
+import Aw1 from "../assets/imgs/about/awards/1.png"
+import Aw2 from "../assets/imgs/about/awards/2.png"
+import Aw3 from "../assets/imgs/about/awards/3.png"
+import Aw4 from "../assets/imgs/about/awards/4.png"
+import Aw5 from "../assets/imgs/about/awards/5.png"
+import Aw6 from "../assets/imgs/about/awards/6.png"
+import Aw7 from "../assets/imgs/about/awards/7.png"
+import Aw8 from "../assets/imgs/about/awards/8.png"
+---
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <Meta />
+        <title>KAJO / STUDIO</title>
+    </head>
+    <body>
+        <Nav class="nav-full" />
+        <header class="flex flex-col gap-24 p-24 pt-40 w-full">
+			<h1 class="xxlarge uppercase">Ahoj Kajo</h1>
+			<h1 class="alt small">Discover our mission, values, & the passionate team behind our success.</h1>
+		</header>
+        <Image src={MainImg} alt="main_img" class="h-screen" loading="lazy" />
+        <section class="our_team">
+            <header class="flex flex-col gap-24 p-24 w-full">
+                <div class="flex justify-between">
+                    <p class="meta muted">(Our Team)</p>
+                    <p class="meta muted">(01)</p>
+                </div>
+                <div>
+                    <h1 class="xlarge uppercase">Creative Minds Behind Success</h1>
+                </div>
+            </header>
+            <section class="grid grid-cols-3 grid-rows-2">
+                <article class="about_info">
+                    <figure class="relative">
+                        <Image src={Person1} alt="person1" class="h-full w-full object-cover" loading="lazy" />
+                        <figcaption class="invert dark:invert-0">
+                            <a class="icon"><Image src={Twtr} alt="Twitter" loading="lazy" /></a>
+                            <a class="icon"><Image src={Inst} alt="Instagramm" loading="lazy" /></a>
+                            <a class="icon"><Image src={Fsbc} alt="Faceboock" loading="lazy" /></a>
+                        </figcaption>
+                    </figure>
+                    <div class="flex flex-col p-20 gap-12">
+                        <p class="meta muted">(Creative Director)</p>
+                        <div class="flex flex-col gap-4">
+                            <h3 class="uppercase">Jack<br>Johnson</h3>
+                            <p class="medium muted">Jack is a visionary leader with over a decade of experience in branding and design. Her passion for creativity drives her to constantly seek innovative solutions that elevate brands. With a keen eye for detail.</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="about_info">
+                    <figure class="relative">
+                        <Image src={Person2} alt="person1" class="h-full w-full object-cover" loading="lazy" />
+                        <figcaption class="invert dark:invert-0">
+                            <a class="icon"><Image src={Twtr} alt="Twitter" loading="lazy" /></a>
+                            <a class="icon"><Image src={Inst} alt="Instagramm" loading="lazy" /></a>
+                            <a class="icon"><Image src={Fsbc} alt="Faceboock" loading="lazy" /></a>
+                        </figcaption>
+                    </figure>
+                    <div class="flex flex-col p-20 gap-12">
+                        <p class="meta muted">(Senior Web Developer)</p>
+                        <div class="flex flex-col gap-4">
+                            <h3 class="uppercase">David<br>Nguyen</h3>
+                            <p class="medium muted">With a passion for technology and design, David crafts seamless websites that provide exceptional user experiences. His attention to detail ensures that every project runs smoothly and efficiently.</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="about_info">
+                    <figure class="relative">
+                        <Image src={Person3} alt="person1" class="h-full w-full object-cover" loading="lazy" />
+                        <figcaption class="invert dark:invert-0">
+                            <a class="icon"><Image src={Twtr} alt="Twitter" loading="lazy" /></a>
+                            <a class="icon"><Image src={Inst} alt="Instagramm" loading="lazy" /></a>
+                            <a class="icon"><Image src={Fsbc} alt="Faceboock" loading="lazy" /></a>
+                        </figcaption>
+                    </figure>
+                    <div class="flex flex-col p-20 gap-12">
+                        <p class="meta muted">(UI/UX Designer)</p>
+                        <div class="flex flex-col gap-4">
+                            <h3 class="uppercase">Emily<br>Carter</h3>
+                            <p class="medium muted">Emily specializes in creating intuitive and engaging user interfaces. Her empathetic approach to design allows her to understand users' needs and develop solutions that enhance their experience.</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="about_info">
+                    <figure class="relative">
+                        <Image src={Person4} alt="person1" class="h-full w-full object-cover" loading="lazy" />
+                        <figcaption class="invert dark:invert-0">
+                            <a class="icon"><Image src={Twtr} alt="Twitter" loading="lazy" /></a>
+                            <a class="icon"><Image src={Inst} alt="Instagramm" loading="lazy" /></a>
+                            <a class="icon"><Image src={Fsbc} alt="Faceboock" loading="lazy" /></a>
+                        </figcaption>
+                    </figure>
+                    <div class="flex flex-col p-20 gap-12">
+                        <p class="meta muted">(Brand Strategist)</p>
+                        <div class="flex flex-col gap-4">
+                            <h3 class="uppercase">Michaela<br>Linden</h3>
+                            <p class="medium muted">Michaela combines analytical skills with creativity to develop effective brand strategies. He helps clients articulate their vision and connect with their target audience through compelling storytelling.</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="about_info">
+                    <figure class="relative">
+                        <Image src={Person5} alt="person1" class="h-full w-full object-cover" loading="lazy" />
+                        <figcaption class="invert dark:invert-0">
+                            <a class="icon"><Image src={Twtr} alt="Twitter" loading="lazy" /></a>
+                            <a class="icon"><Image src={Inst} alt="Instagramm" loading="lazy" /></a>
+                            <a class="icon"><Image src={Fsbc} alt="Faceboock" loading="lazy" /></a>
+                        </figcaption>
+                    </figure>
+                    <div class="flex flex-col p-20 gap-12">
+                        <p class="meta muted">(Graphic Designer)</p>
+                        <div class="flex flex-col gap-4">
+                            <h3 class="uppercase">Jessica<br>Chenin</h3>
+                            <p class="medium muted">A talented graphic designer, Jessica brings ideas to life through stunning visuals. Her creativity and expertise ensure that every project reflects the client's brand identity and vision.</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="about_info">
+                    <figure class="relative">
+                        <Image src={Person6} alt="person1" class="h-full w-full object-cover" loading="lazy" />
+                        <figcaption class="invert dark:invert-0">
+                            <a class="icon"><Image src={Twtr} alt="Twitter" loading="lazy" /></a>
+                            <a class="icon"><Image src={Inst} alt="Instagramm" loading="lazy" /></a>
+                            <a class="icon"><Image src={Fsbc} alt="Faceboock" loading="lazy" /></a>
+                        </figcaption>
+                    </figure>
+                    <div class="flex flex-col p-20 gap-12">
+                        <p class="meta muted">(Marketing Specialist)</p>
+                        <div class="flex flex-col gap-4">
+                            <h3 class="uppercase">Roberta<br>Martinez</h3>
+                            <p class="medium muted">Roberta is a digital marketing expert with a knack for driving results. He crafts effective campaigns that enhance brand visibility and engagement, utilizing analytics to inform strategic decisions.</p>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </section>
+        <section id="awards">
+            <header class="flex flex-col gap-24 p-24 w-full">
+                <div class="flex justify-between">
+                    <p class="meta muted">(What we archieved)</p>
+                    <p class="meta muted">(02)</p>
+                </div>
+                <div>
+                    <h1 class="xlarge uppercase">Awards & Recognition</h1>
+                    <h1 class="alt small">We’re a studio with diverse roots that want to help companies.</h1>
+                </div>
+            </header>
+            <div class="flex gap-4 relative z-50">
+                <div class="h-screen w-full grid grid-cols-3 grid-rows-3 gap-4 sticky top-4 left-4 right-4">
+                    <Image src={Aw1} alt="aw1" class="h-full w-full object-cover" loading="lazy" />
+                    <Image src={Aw2} alt="aw1" class="h-full w-full object-cover" loading="lazy" />
+                    <Image src={Aw3} alt="aw1" class="h-full w-full object-cover" loading="lazy" />
+                    <Image src={Aw4} alt="aw1" class="h-full w-full object-cover" loading="lazy" />
+                    <Image src={Aw5} alt="aw1" class="h-full w-full object-cover" loading="lazy" />
+                    <Image src={Aw6} alt="aw1" class="h-full w-full object-cover" loading="lazy" />
+                    <Image src={Aw7} alt="aw1" class="h-full w-full object-cover" loading="lazy" />
+                    <Image src={Aw8} alt="aw1" class="h-full w-full object-cover" loading="lazy" />
+                    <Image src={Aw7} alt="aw1" class="h-full w-full object-cover" loading="lazy" />
+                </div>
+                <div class="flex flex-col w-full p-24 gap-32 bg-muted">
+                    <div class="flex flex-col gap-8">
+                        <h1 class="uppercase">Branding<br>Awards</h1>
+                        <section class="award_list">
+                            <article class="award_item">
+                                <h4 class="alt">Brand Excellence Awards</h4>
+                                <p class="meta muted">(2024)</p>
+                            </article>
+                            <hr>
+                            <article class="award_item">
+                                <h4 class="alt">Iconic Identity Awards</h4>
+                                <p class="meta muted">(2024)</p>
+                            </article>
+                            <hr>
+                            <article class="award_item">
+                                <h4 class="alt">Visionary Brand Honors</h4>
+                                <p class="meta muted">(2023)</p>
+                            </article>
+                            <hr>
+                            <article class="award_item">
+                                <h4 class="alt">Golden Mark Awards</h4>
+                                <p class="meta muted">(2023)</p>
+                            </article>
+                            <hr>
+                            <article class="award_item">
+                                <h4 class="alt">Brand Innovation Awards</h4>
+                                <p class="meta muted">(2022)</p>
+                            </article>
+                            <hr>
+                            <article class="award_item">
+                                <h4 class="alt">Signature Branding Awards</h4>
+                                <p class="meta muted">(2021)</p>
+                            </article>
+                        </section>
+                    </div>
+                    <div class="flex flex-col gap-8">
+                        <h1 class="uppercase">Website<br>Awards</h1>
+                        <section class="award_list">
+                            <article class="award_item">
+                                <h4 class="alt">Digital Masterpiece Awards</h4>
+                                <p class="meta muted">(2023)</p>
+                            </article>
+                            <hr>
+                            <article class="award_item">
+                                <h4 class="alt">Web Excellence Awards</h4>
+                                <p class="meta muted">(2023)</p>
+                            </article>
+                            <hr>
+                            <article class="award_item">
+                                <h4 class="alt">Pixel Perfection Honors</h4>
+                                <p class="meta muted">(2023)</p>
+                            </article>
+                            <hr>
+                            <article class="award_item">
+                                <h4 class="alt">Innovation in Web Design Awards</h4>
+                                <p class="meta muted">(2023)</p>
+                            </article>
+                            <hr>
+                            <article class="award_item">
+                                <h4 class="alt">Best in User Experience Awards</h4>
+                                <p class="meta muted">(2023)</p>
+                            </article>
+                            <hr>
+                            <article class="award_item">
+                                <h4 class="alt">Interactive Design Awards</h4>
+                                <p class="meta muted">(2023)</p>
+                            </article>
+                        </section>
+                    </div>
+                    <div class="flex flex-col gap-8">
+                        <h1 class="uppercase">UI/UX<br>Awards</h1>
+                        <section class="award_list">
+                            <article class="award_item">
+                                <h4 class="alt">User Experience Excellence Awards</h4>
+                                <p class="meta muted">(2023)</p>
+                            </article>
+                            <hr>
+                            <article class="award_item">
+                                <h4 class="alt">Intuitive Interface Awards</h4>
+                                <p class="meta muted">(2023)</p>
+                            </article>
+                            <hr>
+                            <article class="award_item">
+                                <h4 class="alt">Seamless Design Honors</h4>
+                                <p class="meta muted">(2023)</p>
+                            </article>
+                            <hr>
+                            <article class="award_item">
+                                <h4 class="alt">UX Innovation Awards</h4>
+                                <p class="meta muted">(2023)</p>
+                            </article>
+                            <hr>
+                            <article class="award_item">
+                                <h4 class="alt">Flawless Interaction Awards</h4>
+                                <p class="meta muted">(2023)</p>
+                            </article>
+                            <hr>
+                            <article class="award_item">
+                                <h4 class="alt">Human-Centered Design Awards</h4>
+                                <p class="meta muted">(2023)</p>
+                            </article>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <Footer />
+    </body>
+</html>
