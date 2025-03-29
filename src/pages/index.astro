@@ -7,19 +7,12 @@ import Meta from "../components/Meta.astro";
 
 import MainImg from "../assets/imgs/main/main_img.png";
 
-// Импорт изображений
-import AcmeLight from "../assets/imgs/logos/acme-white.svg";
-import AcmeDark from "../assets/imgs/logos/acme-black.svg";
-import AsgardiaLight from "../assets/imgs/logos/asgardia-white.svg";
-import AsgardiaDark from "../assets/imgs/logos/asgardia-black.svg";
-import GoldlineLight from "../assets/imgs/logos/goldline-white.svg";
-import GoldlineDark from "../assets/imgs/logos/goldline-black.svg";
-import KanbaLight from "../assets/imgs/logos/kanba-white.svg";
-import KanbaDark from "../assets/imgs/logos/kanba-black.svg";
-import UtosiaLight from "../assets/imgs/logos/utosia-white.svg";
-import UtosiaDark from "../assets/imgs/logos/utosia-black.svg";
-import CircleLight from "../assets/imgs/logos/circle-white.svg";
-import CircleDark from "../assets/imgs/logos/circle-black.svg";
+import Acme from "../assets/imgs/logos/acme.svg";
+import Asgardia from "../assets/imgs/logos/asgardia.svg";
+import Goldline from "../assets/imgs/logos/goldline.svg";
+import Kanba from "../assets/imgs/logos/kanba.svg";
+import Utosia from "../assets/imgs/logos/utosia.svg";
+import Circle from "../assets/imgs/logos/circle.svg";
 
 import AcmeWrapper from "../assets/imgs/wrappers/acme-wrapper.png"
 import GoldlineWrapper from "../assets/imgs/wrappers/goldline-wrapper.png"
@@ -30,8 +23,7 @@ import Brand from "../assets/imgs/services/brand.png"
 import Website from "../assets/imgs/services/website.png"
 import Design from "../assets/imgs/services/ui&ux.png"
 
-import QuoteWhite from "../assets/icons/quote-white.svg"
-import QuoteBlack from "../assets/icons/quote-black.svg"
+import Quote from "../assets/icons/quote.svg"
 
 import Profile from "../assets/imgs/main/profile.png" 
 ---
@@ -66,18 +58,12 @@ import Profile from "../assets/imgs/main/profile.png"
                 <div class='flex flex-col gap-9'>
                     <p class="meta">(Companies we worked with)</p>
                     <div class="grid grid-cols-3 gap-16 items-center">
-                        <Image src={AcmeLight} alt="Acme logo" class="dark:hidden" />
-                        <Image src={AcmeDark} alt="Acme logo" class="hidden dark:block" />
-                        <Image src={AsgardiaLight} alt="Asgardia logo" class="dark:hidden" />
-                        <Image src={AsgardiaDark} alt="Asgardia logo" class="hidden dark:block" />
-                        <Image src={GoldlineLight} alt="Goldline logo" class="dark:hidden" />
-                        <Image src={GoldlineDark} alt="Goldline logo" class="hidden dark:block" />
-                        <Image src={KanbaLight} alt="Kanba logo" class="dark:hidden" />
-                        <Image src={KanbaDark} alt="Kanba logo" class="hidden dark:block" />
-                        <Image src={UtosiaLight} alt="Utosia logo" class="dark:hidden" />
-                        <Image src={UtosiaDark} alt="Utosia logo" class="hidden dark:block" />
-                        <Image src={CircleLight} alt="Circle logo" class="dark:hidden" />
-                        <Image src={CircleDark} alt="Circle logo" class="hidden dark:block" />
+                        <Image src={Acme} alt="Acme logo" class="dark:invert-0 invert" />
+                        <Image src={Asgardia} alt="Asgardia logo" class="dark:invert-0 invert" />
+                        <Image src={Goldline} alt="Goldline logo" class="dark:invert-0 invert" />
+                        <Image src={Kanba} alt="Kanba logo" class="dark:invert-0 invert" />
+                        <Image src={Utosia} alt="Utosia logo" class="dark:invert-0 invert" />
+                        <Image src={Circle} alt="Circle logo" class="dark:invert-0 invert" />
                     </div>
                 </div>
             </div>
@@ -200,8 +186,7 @@ import Profile from "../assets/imgs/main/profile.png"
 		</header>
 		<section class="grid grid-cols-3 grid-rows-2">
 			<article class="review">
-				<Image src={QuoteWhite} alt="Quote" class="hidden dark:block"/>
-				<Image src={QuoteBlack} alt="Quote" class="block dark:hidden"/>
+				<Image src={Quote} alt="Quote" class="dark:invert-0 invert"/>
 				<div class="flex flex-col justify-between h-full">
 					<div class='flex flex-col gap-4'>
 						<h3 class="alt">Exceptional Branding That Elevated Our Identity.</h3>
@@ -217,8 +202,7 @@ import Profile from "../assets/imgs/main/profile.png"
 				</div>
 			</article>
 			<article class="review">
-				<Image src={QuoteWhite} alt="Quote" class="hidden dark:block"/>
-				<Image src={QuoteBlack} alt="Quote" class="block dark:hidden"/>
+				<Image src={Quote} alt="Quote" class="dark:invert-0 invert"/>
 				<div class="flex flex-col gap-12">
 					<div class='flex flex-col gap-4'>
 						<h3 class="alt">Outstanding Website Design, Exceeding Expectations.</h3>
@@ -234,8 +218,7 @@ import Profile from "../assets/imgs/main/profile.png"
 				</div>
 			</article>
 			<article class="review">
-				<Image src={QuoteWhite} alt="Quote" class="hidden dark:block"/>
-				<Image src={QuoteBlack} alt="Quote" class="block dark:hidden"/>
+				<Image src={Quote} alt="Quote" class="dark:invert-0 invert"/>
 				<div class="flex flex-col gap-12">
 					<div class='flex flex-col gap-4'>
 						<h3 class="alt">Creative Solutions That Drove Real Results for Our Website.</h3>
@@ -251,8 +234,7 @@ import Profile from "../assets/imgs/main/profile.png"
 				</div>
 			</article>
 			<article class="review">
-				<Image src={QuoteWhite} alt="Quote" class="hidden dark:block"/>
-				<Image src={QuoteBlack} alt="Quote" class="block dark:hidden"/>
+				<Image src={Quote} alt="Quote" class="dark:invert-0 invert"/>
 				<div class="flex flex-col gap-12">
 					<div class='flex flex-col gap-4'>
 						<h3 class="alt">Seamless Collaboration & Support With Exceptional Results.</h3>
@@ -268,8 +250,7 @@ import Profile from "../assets/imgs/main/profile.png"
 				</div>
 			</article>
 			<article class="review">
-				<Image src={QuoteWhite} alt="Quote" class="hidden dark:block"/>
-				<Image src={QuoteBlack} alt="Quote" class="block dark:hidden"/>
+				<Image src={Quote} alt="Quote" class="dark:invert-0 invert"/>
 				<div class="flex flex-col gap-12">
 					<div class='flex flex-col gap-4'>
 						<h3 class="alt">Strategic Branding & Identity With Immediate Impact.</h3>
@@ -285,8 +266,7 @@ import Profile from "../assets/imgs/main/profile.png"
 				</div>
 			</article>
 			<article class="review">
-				<Image src={QuoteWhite} alt="Quote" class="hidden dark:block"/>
-				<Image src={QuoteBlack} alt="Quote" class="block dark:hidden"/>
+				<Image src={Quote} alt="Quote" class="dark:invert-0 invert"/>
 				<div class="flex flex-col gap-12">
 					<div class='flex flex-col gap-4'>
 						<h3 class="alt">UX Design That Transformed Our User Experience.</h3>
