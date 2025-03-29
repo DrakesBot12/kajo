@@ -1,0 +1,66 @@
+---
+import { Image } from "astro:assets";
+import "../../styles/global.css";
+
+import Nav from "../../components/Nav.astro"
+import Footer from "../../components/Footer.astro"
+import Meta from "../../components/Meta.astro";
+
+import Wrapper from "../../assets/imgs/projects/utosia/wrapper.png";
+import Png1 from "../../assets/imgs/projects/utosia/1.png";
+import Png2 from "../../assets/imgs/projects/utosia/2.png";
+import Png3 from "../../assets/imgs/projects/utosia/3.png";
+import Png4 from "../../assets/imgs/projects/utosia/4.png";
+import Png5 from "../../assets/imgs/projects/utosia/5.png";
+---
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <Meta />
+        <title>KAJO / UTOSIA</title>
+    </head>
+    <body>
+        <Nav class="nav-full" />
+        <header class="flex flex-col gap-20 p-24 pt-40 w-full">
+            <div>
+			    <h1 class="xxlarge uppercase">Utosia</h1>
+			    <h1 class="alt small">Utosia came to us looking for a full-service digital solution.</h1>                
+            </div>
+            <div class="flex gap-40">
+                <div class="flex flex-col gap-4">
+                    <p class="meta">(Client)</p>
+                    <h4 class="alt">Utosia</h4>
+                </div>
+                <div class="flex flex-col gap-4">
+                    <p class="meta">(Year)</p>
+                    <h4 class="alt">2024</h4>
+                </div>
+                <div class="flex flex-col gap-4">
+                    <p class="meta">(Services)</p>
+                    <h4 class="alt">Branding, Website</h4>
+                </div>
+            </div>
+		</header>
+        <Image src={Wrapper} alt="Wrapper" class="w-srceen" loading="lazy" />
+        <section class="flex p-24 gap-24">
+            <h1 class="small uppercase sticky top-40 h-fit w-[35%]">Dynamic<br>Website</h1>
+            <div class="flex flex-col gap-20 w-[65%]">
+                <h2 class="alt">Utosia, an emerging e-commerce platform for sustainable fashion, came to us looking for a full-service digital solution.</h2>
+                <section class="flex flex-col gap-12">
+                    <p class="muted">They needed a site that not only reflected their commitment to eco-friendly products but also provided a seamless shopping experience. We focused on creating an e-commerce platform that was visually appealing, easy to navigate, and optimized for conversions.</p>
+                    <p class="muted">The design incorporates bold imagery, earthy tones, and clean lines to align with Utosia’s sustainable values. Every product page was carefully crafted to highlight the unique aspects of the brand's clothing, from materials to ethical production methods. We implemented a streamlined checkout process, ensuring minimal friction for users, and integrated advanced search functionalities to help shoppers easily find the products they’re looking for.</p>
+                    <p class="muted">Since launching the platform, Utosia has seen a steady increase in traffic and sales. The site’s responsiveness across mobile and desktop has further enhanced the customer experience, making it easy for users to shop from any device. This project has helped Utosia carve out a unique space in the competitive sustainable fashion market.</p>
+                </section>
+            </div>
+        </section>
+        <section class="grid grid-cols-2 grid-rows-3 gap-4">
+            <Image src={Png1} alt="Png1" class="w-full h-full aspect-square" loading="lazy" />
+            <Image src={Png2} alt="Png2" class="w-full h-full aspect-square" loading="lazy" />
+            <Image src={Png3} alt="Png3" class="w-full h-full col-span-2" loading="lazy" />
+            <Image src={Png4} alt="Png4" class="w-full h-full aspect-square" loading="lazy" />
+            <Image src={Png5} alt="Png5" class="w-full h-full aspect-square" loading="lazy" />
+        </section>
+        <Footer />
+    </body>
+</html>
